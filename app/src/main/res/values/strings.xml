@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SingleScreenApp</string>
+
+    <!--The slogan of the bakery [CHAR LIMIT=30] -->
+    <string name="taste_the_happiness">Taste the happiness</string>
+
+    <!--The address of the bakery [CHAR LIMIT=60] -->
+    <string name="address">\"Priednieki\", Kuldiga municipality, LV-3301</string>
+
+    <!--The site of the bakery, should not be translated  [CHAR LIMIT=30]-->
+    <string name="web" translatable="false">http://www.inesestortes.lv/</string>
+
+    <!--The phone number of the bakery, should not be translated  [CHAR LIMIT=30]-->
+    <string name="phone" translatable="false">+371 99999999</string>
+
+    <!--The e-mail of the bakery, should not be translated  [CHAR LIMIT=30]-->
+    <string name="mail" translatable="false">inesestortes@inesestortes.lv</string>
+
+    <!--A short description  [CHAR LIMIT=90]-->
+    <string name="description">Ineses torte is a small bakery in Kuldiga, Latvia. Press on the symbols to see more.</string>
+</resources>
