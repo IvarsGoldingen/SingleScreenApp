@@ -1,26 +1,32 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">#531a01</item>
         <item name="colorPrimaryDark">#c99067</item>
         <item name="colorAccent">#9399c2</item>
     </style>
     <style name="Information_text">
-        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginLeft">@dimen/left_margin_information_text</item>
         <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">48sp</item>
+        <item name="android:layout_height">@dimen/information_view_nested_view_height</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:textSize">18sp</item>
-        <item name="android:textColor">#c99067</item>
+        <item name="android:textColor">@color/information_text_color</item>
     </style>
     <style name="Information_view">
-        <item name="android:layout_marginLeft">8dp</item>
-        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginLeft">@dimen/side_margin_information_view</item>
+        <item name="android:layout_marginRight">@dimen/side_margin_information_view</item>
         <item name="android:orientation">horizontal</item>
         <item name="android:layout_weight">1</item>
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_height">@dimen/information_view_height</item>
+    </style>
+    <style name="ButtonImageSymbols">
+        <item name="android:padding">@dimen/button_image_padding</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:layout_width">@dimen/information_view_nested_view_height</item>
+        <item name="android:layout_height">@dimen/information_view_nested_view_height</item>
     </style>
 </resources>
