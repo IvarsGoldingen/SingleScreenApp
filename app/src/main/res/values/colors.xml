@@ -3,7 +3,12 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="slogan_color">#ae0e0e</color>
-    <color name="description_color">#593704</color>
-    <color name="information_text_color">#c99067</color>
+    <color name="slogan_color">#f55151</color>
+    <color name="description_color">#d9b68d</color>
+    <color name="information_text_color">#d9b68d</color>
+    <color name="background_color">#4b1909</color>
+    <color name="tablayout_color">#2e0e04</color>
+    <color name="selected_text_color">#d6a899</color>
+    <color name="unselected_text_color">#78482f</color>
+    <color name="button_text_color">#FFFFFF</color>
 </resources>

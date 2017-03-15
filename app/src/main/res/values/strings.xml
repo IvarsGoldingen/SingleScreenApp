@@ -18,4 +18,25 @@
 
     <!--A short description  [CHAR LIMIT=90]-->
     <string name="description">Ineses torte is a small bakery in Kuldiga, Latvia. Press on the symbols to see more.</string>
+
+    <string name="order_title">Place your order</string>
+    <string name="cottage_c">Cottage cheese cake</string>
+    <string name="strawberry_c">Strawberry cake</string>
+    <string name="honey_c">Honey cake</string>
+    <string name="bread_c">Bread cake</string>
+    <string name="default_quantity">0</string>
+    <string name="total_price">Total price: </string>
+    <string name="default_price">00.00 $</string>
+    <string name="place_order">place order</string>
+
+    <string name="too_many_cakes_message">Please contact us for larger quantities</string>
+    <string name="too_few_cakes_message">Zero cakes already selected</string>
+    <string name="order_summary_message">Order summary:</string>
+    <string name="total_number_of_ccc">Cottage cheese cakes ordered: </string>
+    <string name="total_number_of_sc">Strawberry cakes ordered: </string>
+    <string name="total_number_of_bc">Bread cakes ordered: </string>
+    <string name="total_number_of_hc">Honey cakes ordered: </string>
+    <string name="total_price_mail_message">Total price: </string>
+    <string name="mail_subject">Automatically generated order</string>
+
 </resources>

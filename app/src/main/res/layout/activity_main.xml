@@ -1,102 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:fillViewport="true">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.singlescreenapp.MainActivity">
 
-    <LinearLayout
-        android:id="@+id/activity_main"
+    <android.support.design.widget.TabLayout
+        android:id="@+id/sliding_tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:background="@color/tablayout_color"
+        app:tabIndicatorColor="@color/information_text_color"
+        app:tabSelectedTextColor="@color/information_text_color"
+        app:tabTextColor="@color/unselected_text_color"></android.support.design.widget.TabLayout>
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/title_image_height"
-            android:layout_weight="1"
-            android:scaleType="center"
-            android:src="@drawable/logo" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="@dimen/margin_between_groups"
-                android:fontFamily="cursive"
-                android:text="@string/taste_the_happiness"
-                android:textColor="@color/slogan_color"
-                android:textSize="@dimen/slogan_text_size"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_between_groups"
-                android:layout_marginLeft="@dimen/side_margin_description"
-                android:layout_marginRight="@dimen/side_margin_description"
-                android:gravity="center"
-                android:text="@string/description"
-                android:textColor="@color/description_color"
-                android:textSize="@dimen/description_text_size" />
-
-            <LinearLayout style="@style/Information_view">
-
-                <ImageButton
-                    style="@style/ButtonImageSymbols"
-                    android:onClick="showOnMap"
-                    android:src="@drawable/home" />
-
-                <TextView
-                    style="@style/Information_text"
-                    android:layout_width="wrap_content"
-                    android:text="@string/address" />
-            </LinearLayout>
-
-            <LinearLayout style="@style/Information_view">
-
-                <ImageButton
-                    style="@style/ButtonImageSymbols"
-                    android:onClick="web"
-                    android:src="@drawable/web" />
-
-                <TextView
-                    style="@style/Information_text"
-                    android:layout_width="wrap_content"
-                    android:text="@string/web" />
-            </LinearLayout>
-
-            <LinearLayout style="@style/Information_view">
-
-                <ImageButton
-                    style="@style/ButtonImageSymbols"
-                    android:onClick="call"
-                    android:src="@drawable/phone" />
-
-                <TextView
-                    style="@style/Information_text"
-                    android:layout_width="wrap_content"
-                    android:text="@string/phone" />
-            </LinearLayout>
-
-            <LinearLayout style="@style/Information_view">
-
-                <ImageButton
-                    style="@style/ButtonImageSymbols"
-                    android:onClick="mail"
-                    android:src="@drawable/mail" />
-
-                <TextView
-                    style="@style/Information_text"
-                    android:layout_width="wrap_content"
-                    android:text="@string/mail" />
-            </LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
-</ScrollView>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

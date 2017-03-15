@@ -16,10 +16,10 @@
         <item name="android:textColor">@color/information_text_color</item>
     </style>
     <style name="Information_view">
+        <item name="android:layout_marginBottom">@dimen/margin_between_groups</item>
         <item name="android:layout_marginLeft">@dimen/side_margin_information_view</item>
         <item name="android:layout_marginRight">@dimen/side_margin_information_view</item>
         <item name="android:orientation">horizontal</item>
-        <item name="android:layout_weight">1</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/information_view_height</item>
     </style>
@@ -29,4 +29,49 @@
         <item name="android:layout_width">@dimen/information_view_nested_view_height</item>
         <item name="android:layout_height">@dimen/information_view_nested_view_height</item>
     </style>
+
+    <style name="Order_relativeL_style">
+        <item name="android:layout_marginRight">@dimen/side_margin_description</item>
+        <item name="android:layout_marginLeft">@dimen/side_margin_description</item>
+        <item name="android:layout_marginBottom">@dimen/margin_between_groups</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Order_cake_name_style">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">@dimen/cake_name_order</item>
+        <item name="android:textColor">@color/information_text_color</item>
+    </style>
+
+    <style name="Order_linearL_style">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Order_button_style">
+        <item name="android:layout_width">@dimen/order_quantity_button_size</item>
+        <item name="android:layout_height">@dimen/order_quantity_button_size</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/ripple</item>
+        <item name="android:elevation">@dimen/default_elevation</item>
+        <item name="android:stateListAnimator">@animator/raise</item>
+    </style>
+
+    <style name="Order_quantity_style">
+        <item name="android:text">@string/default_quantity</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">@dimen/quantity_number_margin</item>
+        <item name="android:textSize">@dimen/quantity_number_size</item>
+        <item name="android:textColor">@color/information_text_color</item>
+    </style>
+
 </resources>

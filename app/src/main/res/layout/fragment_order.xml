@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_between_groups"
+            android:gravity="center"
+            android:text="@string/order_title"
+            android:textColor="@color/information_text_color"
+            android:textSize="@dimen/small_heading_text_size" />
+
+        <RelativeLayout style="@style/Order_relativeL_style">
+
+            <TextView
+                style="@style/Order_cake_name_style"
+                android:text="@string/cottage_c" />
+
+            <LinearLayout style="@style/Order_linearL_style">
+
+                <ImageButton
+                    android:id="@+id/minus_CCC"
+                    style="@style/Order_button_style"
+                    android:src="@drawable/minus" />
+
+                <TextView
+                    android:id="@+id/amount_CCC"
+                    style="@style/Order_quantity_style" />
+
+                <ImageButton
+                    android:id="@+id/plus_CCC"
+                    style="@style/Order_button_style"
+                    android:src="@drawable/plus" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/Order_relativeL_style">
+
+            <TextView
+                style="@style/Order_cake_name_style"
+                android:text="@string/strawberry_c" />
+
+            <LinearLayout style="@style/Order_linearL_style">
+
+                <ImageButton
+                    android:id="@+id/minus_SC"
+                    style="@style/Order_button_style"
+                    android:src="@drawable/minus" />
+
+                <TextView
+                    android:id="@+id/amount_SC"
+                    style="@style/Order_quantity_style" />
+
+                <ImageButton
+                    android:id="@+id/plus_SC"
+                    style="@style/Order_button_style"
+                    android:src="@drawable/plus" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/Order_relativeL_style">
+
+            <TextView
+                style="@style/Order_cake_name_style"
+                android:text="@string/honey_c" />
+
+            <LinearLayout style="@style/Order_linearL_style">
+
+                <ImageButton
+                    android:id="@+id/minus_HC"
+                    style="@style/Order_button_style"
+                    android:src="@drawable/minus" />
+
+                <TextView
+                    android:id="@+id/amount_HC"
+                    style="@style/Order_quantity_style" />
+
+                <ImageButton
+                    android:id="@+id/plus_HC"
+                    style="@style/Order_button_style"
+                    android:src="@drawable/plus" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/Order_relativeL_style">
+
+            <TextView
+                style="@style/Order_cake_name_style"
+                android:text="@string/bread_c" />
+
+            <LinearLayout style="@style/Order_linearL_style">
+
+                <ImageButton
+                    android:id="@+id/minus_BC"
+                    style="@style/Order_button_style"
+                    android:src="@drawable/minus" />
+
+                <TextView
+                    android:id="@+id/amount_BC"
+                    style="@style/Order_quantity_style" />
+
+                <ImageButton
+                    android:id="@+id/plus_BC"
+                    style="@style/Order_button_style"
+                    android:src="@drawable/plus" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_between_groups"
+            android:gravity="center">
+
+            <TextView
+                style="@style/Order_cake_name_style"
+                android:layout_marginRight="@dimen/quantity_number_margin"
+                android:text="@string/total_price" />
+
+            <TextView
+                android:id="@+id/total_price"
+                style="@style/Order_cake_name_style"
+                android:text="@string/default_price" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/place_order"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/order_quantity_button_size"
+            android:layout_gravity="center"
+            android:background="@drawable/ripple"
+            android:paddingLeft="@dimen/order_button_side_padding"
+            android:paddingRight="@dimen/order_button_side_padding"
+            android:stateListAnimator="@animator/raise"
+            android:text="@string/place_order"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/cake_name_order" />
+    </LinearLayout>
+</ScrollView>
